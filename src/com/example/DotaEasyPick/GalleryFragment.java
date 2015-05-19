@@ -16,6 +16,7 @@ public class GalleryFragment extends Fragment {
 
     private GridView gridview;
     private Context context;
+    private static MainFragment fragment;
 
 
     @Override
@@ -47,23 +48,29 @@ public class GalleryFragment extends Fragment {
                                     long id) {
                 boolean flag = true;
                 try {
-                    for (int i = 0; i < 10; i++) {
-                        if (MainFragment.allHeroes[i].equals(ImageAdapter.mHeroesNames[position]))
+                    for (HeroButton hb: fragment.heroesList) {
+                        if (hb.heroId == position)
                             flag = false;
                     }
                 } catch (NullPointerException e) {
-
+                    System.err.println(e);
                 }
                 if (flag) {
-                    MainFragment.currentButton.button.setImageResource(ImageAdapter.mThumbIds[position]);
-                    MainFragment.currentButton.heroId = position;
+                    System.out.println("ready to setHero in gallery");
+                    fragment.currentButton.setHero(position, ImageAdapter.mThumbIds[position]);
+                    System.out.println("invoking spinnerFilling from gallery");
+                    fragment.spinnerFilling();
+                    System.out.println("spinnerFilling finished from gallery");
+                    MainActivity.viewPager.setCurrentItem(0);
                 }
-                MainFragment.allHeroes[MainFragment.curHero] = ImageAdapter.mHeroesNames[position];
-                MainActivity.viewPager.setCurrentItem(0);
             }
         });
 
         return view;
+    }
+
+    public static void setMainFragment (MainFragment mf) {
+        fragment = mf;
     }
 
 	/*private GridView.OnItemClickListener gridviewOnItemClickListener = new GridView.OnItemClickListener() {

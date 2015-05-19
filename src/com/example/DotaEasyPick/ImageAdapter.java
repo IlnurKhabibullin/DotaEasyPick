@@ -49,15 +49,17 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     // references to our images
-    public	static Integer[] mThumbIds = { R.drawable.abaddon, R.drawable.anti_mage,
-            R.drawable.broodmother, R.drawable.chaos_knight, R.drawable.chen,
-            R.drawable.dark_seer, R.drawable.drow_ranger, R.drawable.invoker,
-            R.drawable.kotl, R.drawable.meepo, R.drawable.puck,
-            R.drawable.pudge, R.drawable.pugna, R.drawable.slardar,
-            R.drawable.storm_spirit, R.drawable.templar_assassin, R.drawable.tidehunter,
-            R.drawable.timbersaw, R.drawable.weaver, R.drawable.witch_doctor };
-    public static String[] mHeroesNames = {"abaddon", "anti_mage","broodmother", "chaos_knight", "chen", "dark_seer",
-            "drow_ranger", "invoker", "kotl", "meepo", "puck", "pudge", "pugna", "slardar", "storm_spirit", "templar_assassin",
-            "tidehunter", "timbersaw", "weaver", "witch_doctor"};
+    public	static Integer[] mThumbIds = { R.drawable.abaddon, R.drawable.alchemist,
+            R.drawable.antimage, R.drawable.ancient_apparition, R.drawable.axe,
+            R.drawable.bane, R.drawable.batrider, R.drawable.beastmaster,
+            R.drawable.bloodseeker, R.drawable.bounty_hunter, R.drawable.brewmaster,
+            R.drawable.bristleback, R.drawable.broodmother, R.drawable.centaur,
+            R.drawable.chaos_knight, R.drawable.chen, R.drawable.clinkz,
+            R.drawable.clockwerk, R.drawable.crystal_maiden, R.drawable.dark_seer };
+    public static String[] mHeroesNames = {"abaddon", "alchemist", "antimage", "ancient_apparition", "axe", "bane",
+            "batrider", "beastmaster", "bloodseeker", "bounty_hunter", "brewmaster", "bristleback", "broodmother",
+            "centaur", "chaos_knight", "chen", "clinkz", "clockwerk", "crystal_maiden", "dark_seer"
+            /*, "drow_ranger", "invoker", "kotl", "meepo", "puck", "pudge", "pugna", "slardar", "storm_spirit",
+             "templar_assassin", "tidehunter", "timbersaw", "weaver", "witch_doctor"*/};
 
 }

@@ -4,13 +4,13 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:background="#111111" >
+              android:background="@drawable/icon_dota2" >
 
     <View
             android:id="@+id/view2"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:background="#111111" />
+            android:background="@drawable/little_layout" />
 
     <GridView
             android:id="@+id/gridView1"

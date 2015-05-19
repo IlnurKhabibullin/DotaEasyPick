@@ -7,8 +7,7 @@
 
     <ImageView android:id="@+id/left_pic"
                android:layout_width="60dp"
-               android:layout_height="34dp"
-               android:background="@drawable/ic_launcher" />
+               android:layout_height="34dp" />
 
     <TextView android:id="@+id/text_main_seen"
               android:layout_width="wrap_content"
@@ -17,7 +16,7 @@
               android:layout_marginTop="2dp"
               android:layout_toRightOf="@+id/left_pic"
               android:padding="3dp"
-              android:textColor="#0022ee"
+              android:textColor="#FFFFFF"
               android:textSize="22sp"
               android:textStyle="bold" />
 

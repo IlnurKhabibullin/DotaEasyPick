@@ -1,7 +1,6 @@
 package com.example.DotaEasyPick;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
-import android.content.res.AssetManager;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
@@ -86,35 +85,83 @@ public class MainActivity extends FragmentActivity {
 
         public void fillDB (SQLiteDatabase db) throws IOException {
             BufferedReader reader = new BufferedReader(new InputStreamReader(
-                    getResources().openRawResource(R.raw.hero_table)));
+                    getResources().openRawResource(R.raw.hero_table_create)));
             String line = "", query = "";
             while ((line = reader.readLine()) != null) {
                 query += line;
             }
+            reader.close();
             db.execSQL(query);
+            System.out.println("hero_table created");
 
             reader = new BufferedReader(new InputStreamReader(
-                    getResources().openRawResource(R.raw.parameter_table)));
+                    getResources().openRawResource(R.raw.hero_table_insert)));
             query = "";
             while ((line = reader.readLine()) != null) {
                 query += line;
             }
+            reader.close();
             db.execSQL(query);
+            System.out.println("hero_table filled");
 
             reader = new BufferedReader(new InputStreamReader(
-                    getResources().openRawResource(R.raw.main_table)));
+                    getResources().openRawResource(R.raw.parameter_table_create)));
             query = "";
             while ((line = reader.readLine()) != null) {
                 query += line;
             }
+            reader.close();
             db.execSQL(query);
+            System.out.println("parameter_table created");
+
+            reader = new BufferedReader(new InputStreamReader(
+                    getResources().openRawResource(R.raw.parameter_table_insert)));
+            query = "";
+            while ((line = reader.readLine()) != null) {
+                query += line;
+            }
+            reader.close();
+            db.execSQL(query);
+            System.out.println("parameter_table filled");
+
+            reader = new BufferedReader(new InputStreamReader(
+                    getResources().openRawResource(R.raw.main_table_create)));
+            query = "";
+            while ((line = reader.readLine()) != null) {
+                query += line;
+            }
+            reader.close();
+            db.execSQL(query);
+            System.out.println("main_table created");
+
+            reader = new BufferedReader(new InputStreamReader(
+                    getResources().openRawResource(R.raw.main_table_insert1)));
+            query = "";
+            while ((line = reader.readLine()) != null) {
+                query += line;
+            }
+            reader.close();
+            db.execSQL(query);
+            System.out.println("main_table filled with 1st insert");
+
+            reader = new BufferedReader(new InputStreamReader(
+                    getResources().openRawResource(R.raw.main_table_insert2)));
+            query = "";
+            while ((line = reader.readLine()) != null) {
+                query += line;
+            }
+            reader.close();
+            db.execSQL(query);
+            System.out.println("main_table filled with 2nd insert");
         }
 
         public void onCreate(SQLiteDatabase db) {
             try {
+                System.out.println("trying to fill db");
                 fillDB(db);
             } catch (IOException e) {
                 System.err.println(e);
+                System.out.println("peace decibal");
             }
         }
 

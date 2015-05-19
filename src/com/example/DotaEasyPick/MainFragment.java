@@ -4,8 +4,10 @@ package com.example.DotaEasyPick;
  * Created by Ильнур on 14.05.15.
  */
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import android.database.Cursor;
+import android.database.CursorIndexOutOfBoundsException;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -20,7 +22,7 @@ import android.widget.Spinner;
 
 public class MainFragment extends Fragment {
 
-    private ArrayList<HeroButton> heroesList;
+    public ArrayList<HeroButton> heroesList;
     private Button mPickButton;
     private Cursor cursor;
     private SQLiteDatabase db;
@@ -28,7 +30,7 @@ public class MainFragment extends Fragment {
     private Spinner spinner;
     String [] spinnerList;
     static int curHero;
-    static String [] allHeroes;
+    Algorithm algorithm;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -47,60 +49,33 @@ public class MainFragment extends Fragment {
 
         final View view = inflater.inflate(R.layout.main_layout, container, false);
         db = MainActivity.dbHelper.getWritableDatabase();
-		/*db.execSQL("drop table if exists main_table");
-		db.execSQL("create table main_table ( id integer primary key autoincrement, hero_id integer," +
-				" parameter_id integer, effectiveness integer);");
-		try {
-//			db.execSQL(queryForHeroTable());
-//			db.execSQL(queryForParamTable());
-			int i = 0;
-			String buffer = "";
-			for (String param: queryForMainTable()) {
-				if (i < 450) {
-					buffer += param + ",";
-					i++;
-				} else {
-					buffer += param;
-					db.execSQL("insert into main_table ('hero_id', 'parameter_id', 'effectiveness') values "
-							+ buffer);
-					i = 0;
-					buffer = "";
-				}
-			}
-			if (buffer != "") {
-				db.execSQL("insert into main_table ('hero_id', 'parameter_id', 'effectiveness') values "
-						+ buffer.substring(0, buffer.length() - 1));
-			}
-		} catch (IOException e) {
-			System.err.println(e);
-		}
+        GalleryFragment.setMainFragment(this);
 
-		String query = "select * from main_table";
-		cursor = db.rawQuery(query, null);
-		if (cursor != null) {
-			if (cursor.moveToFirst()) {
-		        String str;
-		        do {
-		        	str = "";
-		        	for (String cn : cursor.getColumnNames()) {
-		        		str = str.concat(cn + " = "
-		        				+ cursor.getString(cursor.getColumnIndex(cn)) + "; ");
-		        	}
-		        	System.out.println(str);
-		        } while (cursor.moveToNext());
-			}
-		}*/
+        /*String query = "select * from hero_table";
+        cursor = db.rawQuery(query, null);
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                String str;
+                do {
+                    str = "";
+                    for (String cn : cursor.getColumnNames()) {
+                        str = str.concat(cn + " = "
+                                + cursor.getString(cursor.getColumnIndex(cn)) + "; ");
+                    }
+                    System.out.println(str);
+                } while (cursor.moveToNext());
+            } else
+                System.out.println("dsgft");
+        }*/
 
-        heroesList = new ArrayList<HeroButton>();
+        algorithm = new Algorithm();
+        heroesList = new ArrayList<>();
         setButtons(view);
 //		{
         spinnerList = new String[6];
         for (int i = 0; i < 6; i++) {
-            spinnerList[i] = "not chosen";
-        }
-        allHeroes = new String[10];
-        for (String a: allHeroes) {
-            a = "";
+            spinnerList[i] = "" +
+                    "";
         }
 //    	}
         mPickButton = (Button)view.findViewById(R.id.pick_button);
@@ -124,10 +99,11 @@ public class MainFragment extends Fragment {
                 for (int i = 0; i < ImageAdapter.mHeroesNames.length; i++) {
                     if (ImageAdapter.mHeroesNames[i].equals((String)spinner.getSelectedItem())) {
                         currentButton.button.setImageResource(ImageAdapter.mThumbIds[i]);
-                        allHeroes[curHero] = (String)spinner.getSelectedItem();
+                        currentButton.heroId = i;
                         break;
                     }
                 }
+                spinnerFilling();
         			/*boolean flag = true;
 					for (int j = 0; j < 10; j++) {
 						try {
@@ -158,7 +134,7 @@ public class MainFragment extends Fragment {
         return view;
     }
 
-    void setButtons (View view) {
+    private void setButtons (View view) {
         int [] images = new int [] {
                 R.drawable.empty_slot_1, R.drawable.empty_slot_1_selected,
                 R.drawable.empty_slot_2, R.drawable.empty_slot_1_selected,
@@ -192,6 +168,7 @@ public class MainFragment extends Fragment {
     }
 
     void selectButton (HeroButton hb) {
+//        System.out.println("selecting button");
         for (HeroButton button: heroesList) {
             if (button.isSelected) {
                 button.isSelected = false;
@@ -205,69 +182,148 @@ public class MainFragment extends Fragment {
             for (int i = 5; i < 10; i++) {
                 if (heroesList.get(i).heroId >= 0) {
                     spinner.setVisibility(spinner.VISIBLE);
+                    spinnerFilling();
                 }
             }
         } else
             spinner.setVisibility(spinner.INVISIBLE);
-        SpinnerFilling();
 //		need to deal with setting "curHero" number of selected button
     }
     //	{
-    void SpinnerFilling() {
+    void spinnerFilling() {
+//        System.out.println("spinnerFilling invoked");
         boolean flag = (spinner.getVisibility() == spinner.VISIBLE);
         String enemyHeroes = "";
-//		после изменения базы надо будет делать запросы с индексами героев, а не их именами
-		/*if (flag) {
-			for (int i = 5; i < 10; i++) {
-				if (heroesList.get(i).heroId >= 0) {
-					enemyHeroes += ", " + heroesList.get(i).heroId + "";
-					flag = true;
-				}
-			}
-		}*/
-        System.out.println("1 flag is " + flag);
+//        System.out.println("1flag is " + flag);
         if (flag) {
             flag = false;
             for (int i = 5; i < 10; i++) {
-                if (!(allHeroes[i] != null && allHeroes[i].equals(""))) {
-                    enemyHeroes += ",'" + allHeroes[i] + "'";
+                if (heroesList.get(i) != currentButton && heroesList.get(i).heroId >= 0) {
+                    enemyHeroes += "," + heroesList.get(i).heroId;
                     flag = true;
-                    System.out.println(i + " flag is " + flag);
                 }
             }
         }
         if (flag) {
-            System.out.println(flag);
+//            System.out.println("2flag is true");
             enemyHeroes = enemyHeroes.substring(1);
-            String query = "select hero_name, count(hero_name) as hero_freq from ability where effect in (select anti_effect" +
+            String query = "select * from main_table"; //where hero_id not in (" + enemyHeroes + ")";
+            /*"select hero_name, count(hero_name) as hero_freq from ability where effect in (select anti_effect" +
                     " from effect where effect_name in (select effect from ability where hero_name in (" + enemyHeroes
-                    + "))) group by hero_name order by hero_freq desc";
+                    + "))) group by hero_name order by hero_freq desc";*/
             cursor = db.rawQuery(query, null);
 
             if (cursor != null) {
+//                System.out.println("cursor not empty");
 //				это просто вывод данных с вернувшегося из базы кортежа
-    			/*if (cursor.moveToFirst()) {
-    		        String str;
-    		        do {
-    		        	str = "";
-    		        	for (String cn : cursor.getColumnNames()) {
-    		        		str = str.concat(cn + " = "
-    		        				+ cursor.getString(cursor.getColumnIndex(cn)) + "; ");
-    		        	}
-    		        	System.out.println(str);
-    		        } while (cursor.moveToNext());
-    			}*/
-                int count = 6;
-                if (cursor.getCount() < count)
-                    count = cursor.getCount();
-                cursor.moveToFirst();
-                for (int i = 0; i < count; i++) {
-                    spinnerList[i] = cursor.getString(0);
-                    cursor.moveToNext();
+                /*if (cursor.moveToFirst()) {
+                    String str;
+                    do {
+                        str = "";
+                        for (String cn : cursor.getColumnNames()) {
+                            str = str.concat(cn + " = "
+                                    + cursor.getString(cursor.getColumnIndex(cn)) + "; ");
+                        }
+                        System.out.println(str);
+                    } while (cursor.moveToNext());
+                }*/
+//                cursor.close();
+                int[] rParams = new int[63];
+                int[] dParams = new int[63];
+                for (int i = 0; i < rParams.length; i++) {
+                    rParams[i] = 0;
+                    dParams[i] = 0;
                 }
-                cursor.close();
+                int rCount = 0, dCount = 0;
+                for (int i = 0; i < 5; i++) {
+                    int id = heroesList.get(i).heroId;
+                    if (id > -1) {
+                        rParams = getHeroParams(cursor, id, rParams);
+                        rCount++;
+                    }
+                    id = heroesList.get(i + 5).heroId;
+                    if (id > -1) {
+                        dParams = getHeroParams(cursor, id, dParams);
+                        dCount++;
+                    }
+                }
+//                System.out.println("params got, rCount= " + rCount + ", dCount= " + dCount);
+                ArrayList<Integer> radiantParams = new ArrayList<>();
+                ArrayList<Integer> direParams = new ArrayList<>();
+                for (int i = 0; i < rParams.length; i++) {
+                    radiantParams.add(rParams[i]);
+                    direParams.add(dParams[i]);
+                }
+                algorithm.updateParams(radiantParams, direParams);
+                algorithm.updateCounts(rCount, dCount);
+                int[] heroRate = new int[ImageAdapter.mHeroesNames.length];
+//                System.out.println("going to set heroRates!");
+                if (cursor.moveToFirst()) {
+//                    System.out.println("cursor has elements!");
+                    for (int i = 0; i < heroRate.length; i++) {
+                        ArrayList<Integer> list = new ArrayList<>();
+                        for (int j = 0; j < 63; j++) {
+//                            System.out.print("j= " + j + ", param= ");
+                            Boolean hasNext = false;
+                            try {
+                                hasNext = (cursor.getInt(2) == j);
+                            } catch (CursorIndexOutOfBoundsException e) {
+                                System.err.println(e);
+                            }
+                            if (hasNext) {
+//                                System.out.println(cursor.getInt(2) + " " + cursor.getInt(3));
+                                list.add(cursor.getInt(3));
+                                try {
+                                    cursor.moveToNext();
+                                } catch (CursorIndexOutOfBoundsException e) {
+                                    System.err.println(e);
+                                }
+                            } else
+                                list.add(0);
+                        }
+//                        System.out.println("invokation checkForHero");
+                        heroRate[i] = algorithm.checkForHero(list);
+//                        System.out.println(i + "'s hero rate= " + heroRate[i]);
+                    }
+//                    System.out.println("sorting");
+                    for (int i: heroRate) {
+                        System.out.println("hero's rate = " + i);
+                    }
+                    ArrayList<Integer> indexes = new ArrayList<>();
+                    for (int i = 0; i < 6; i++) {
+                           indexes.add(-1);
+                    }
+                    for (int j = 0; j < 6; j++) {
+                        int rate = -100;
+                        for (int i = 0; i < heroRate.length; i++) {
+                            if (rate < heroRate[i] && !indexes.contains(i)) {
+                                rate = heroRate[i];
+                                indexes.set(j, i);
+                            }
+                        }
+                    }
+                    for (int i = 0; i < 6; i++) {
+                        spinnerList[i] = ImageAdapter.mHeroesNames[indexes.get(i)];
+                    }
+                }
             }
         }
     }
 //	}
+    int[] getHeroParams (Cursor cursor, int heroId, int[] params) {
+        if (cursor.moveToFirst()) {
+//            System.out.println("cursor has elems");
+            while (cursor.getInt(1) != heroId) {
+                cursor.moveToNext();
+            }
+            for (int j = 0; j < 63; j++) {
+                if (cursor.getInt(2) == j) {
+                    params[cursor.getInt(2)] += (cursor.getInt(3));
+                    cursor.moveToNext();
+                }
+            }
+        }
+
+        return params;
+    }
 }

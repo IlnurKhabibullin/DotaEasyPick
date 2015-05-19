@@ -17,11 +17,11 @@ public class CustomArrayAdapter extends ArrayAdapter<String> {
     String[] spinnerValues;
     Integer[] images;
 
-    public CustomArrayAdapter(Context ctx, int txtViewResourceId, String[] objects, Integer[] images, LayoutInflater infl) {
-        super(ctx, txtViewResourceId, objects);
+    public CustomArrayAdapter(Context ctx, int txtViewResourceId, String[] spinValues, Integer[] images, LayoutInflater infl) {
+        super(ctx, txtViewResourceId, spinValues);
         inflater = infl;
         this.images = images;
-        spinnerValues = objects;
+        spinnerValues = spinValues;
     }
 
     @Override public View getDropDownView(int position, View cnvtView, ViewGroup prnt) {
@@ -34,7 +34,7 @@ public class CustomArrayAdapter extends ArrayAdapter<String> {
 
     public View getCustomView(int position, View convertView, ViewGroup parent, LayoutInflater inflater) {
         View mySpinner = inflater.inflate(R.layout.custom_spinner, parent, false);
-        TextView main_text = (TextView) mySpinner .findViewById(R.id.text_main_seen);
+        TextView main_text = (TextView) mySpinner.findViewById(R.id.text_main_seen);
         main_text.setText(spinnerValues[position]);
 //			could add decription of hero (like "carry, melee...") but then need to add in spinner layout this:
 
@@ -50,7 +50,12 @@ public class CustomArrayAdapter extends ArrayAdapter<String> {
 //		TextView subSpinner = (TextView) mySpinner .findViewById(R.id.sub_text_seen);
 //		subSpinner.setText(spinnerSubs[position]);
         ImageView left_icon = (ImageView) mySpinner .findViewById(R.id.left_pic);
-        left_icon.setImageResource(images[position]); return mySpinner;
+        for (int i = 0; i < ImageAdapter.mHeroesNames.length; i++) {
+            if (ImageAdapter.mHeroesNames[i].equals(spinnerValues[position])) {
+                left_icon.setImageResource(images[i]);
+            }
+        }
+        return mySpinner;
     }
 
 }

@@ -24,6 +24,13 @@
           <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/gallery_layout.xml">
+        <config>
+          <device>Nexus 4</device>
+          <state>Landscape</state>
+          <theme>@android:style/Theme.Holo</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/res/layout/main_layout.xml">
         <config>
           <device>Nexus 4</device>
@@ -34,62 +41,23 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94a48c32-a7cc-4fb7-a919-4ce91da12322" name="Default" comment="Initial commit&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/abaddon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/anti_mage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/broodmother.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/chaos_knight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/chen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/dark_seer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/drow_ranger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_1_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/empty_slot_9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/invoker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/kotl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/meepo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/puck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/pudge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/pugna.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/slardar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/storm_spirit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/templar_assassin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/tidehunter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/timbersaw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/weaver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/witch_doctor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/custom_spinner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/gallery_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/hero_params.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/hero_table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/heroes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/main_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/main_table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/parameter_table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/parametrs_list.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MOVED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\layout\main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DotaEasyPick.iml" afterPath="$PROJECT_DIR$/DotaEasyPick.iml" />
+    <list default="true" id="94a48c32-a7cc-4fb7-a919-4ce91da12322" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\drawable-hdpi\anti_mage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\raw\hero_params.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\raw\hero_table.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\raw\heroes.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\raw\main_table.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\raw\parameter_table.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ильнур\Documents\IDEA\DotaEasyPick\res\raw\parametrs_list.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java" afterPath="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/custom_spinner.xml" afterPath="$PROJECT_DIR$/res/layout/custom_spinner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/gallery_layout.xml" afterPath="$PROJECT_DIR$/res/layout/gallery_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_layout.xml" afterPath="$PROJECT_DIR$/res/layout/main_layout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DotaEasyPick.iws" />
@@ -101,6 +69,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -157,11 +130,17 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="13" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1088">
-              <folding>
-                <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#DBHelper#0;class#MainActivity#0" expanded="false" />
-              </folding>
+            <state line="147" column="75" selection-start="5255" selection-end="5255" vertical-scroll-proportion="0.0" vertical-offset="1975" max-vertical-offset="2720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="13" selection-start="4235" selection-end="4235" vertical-scroll-proportion="0.0" vertical-offset="1458" max-vertical-offset="3825">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,19 +148,34 @@
       <file leaf-file-name="HeroButton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="714">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-              </folding>
+            <state line="38" column="47" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="799">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="CustomArrayAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="22" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+            <state line="46" column="33" selection-start="1774" selection-end="1774" vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GalleryFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="13" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1530">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="81" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="1088">
               <folding />
             </state>
           </provider>
@@ -190,11 +184,11 @@
       <file leaf-file-name="MainFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="244" column="46" selection-start="8737" selection-end="8737" vertical-scroll-proportion="0.5523466" vertical-offset="1088" max-vertical-offset="1972">
+            <state line="101" column="49" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.5826613" vertical-offset="1428" max-vertical-offset="5151">
               <folding>
-                <element signature="method#onActivityCreated#0;class#MainFragment#0" expanded="false" />
-                <element signature="method#onCreate#0;class#MainFragment#0" expanded="false" />
-                <element signature="method#onCreateView#0;class#MainFragment#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2457#2632#0" expanded="true" />
+                <element signature="e#2621#2622#0" expanded="true" />
                 <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
               </folding>
             </state>
@@ -214,19 +208,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/main_layout.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java" />
-        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java" />
-        <option value="$PROJECT_DIR$/res/layout/gallery_layout.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/res/layout/custom_spinner.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main_layout.xml" />
+        <option value="$PROJECT_DIR$/res/layout/gallery_layout.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/Algorythm.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/custom_spinner.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java" />
       </list>
     </option>
   </component>
@@ -249,7 +245,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -358,6 +354,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.DotaEasyPick">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
@@ -578,7 +575,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -625,47 +622,108 @@
       <updated>1431621527227</updated>
       <workItem from="1431621528723" duration="6213000" />
       <workItem from="1431691716462" duration="1683000" />
-      <workItem from="1431693421644" duration="1359000" />
+      <workItem from="1431693421644" duration="2135000" />
+      <workItem from="1431701989797" duration="5873000" />
+      <workItem from="1431957881836" duration="4000" />
+      <workItem from="1431958257295" duration="3148000" />
+      <workItem from="1431963758335" duration="32262000" />
+      <workItem from="1432025558969" duration="14242000" />
     </task>
+    <task id="LOCAL-00001" summary="Big changes, much things added">
+      <created>1431695984491</created>
+      <updated>1431695984491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9255000" />
+    <option name="totallyTimeSpent" value="65560000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11179173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6493109" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11179173" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30015314" sideWeight="0.7416918" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46248084" sideWeight="0.6291541" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17824773" sideWeight="0.5069444" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20061256" sideWeight="0.25830814" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17824773" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20061256" sideWeight="0.7416918" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17824773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17824773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2863706" sideWeight="0.63746226" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3194864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31722054" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6493109" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20061256" sideWeight="0.25830814" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17824773" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17824773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2863706" sideWeight="0.63746226" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31722054" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46248084" sideWeight="0.6291541" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17824773" sideWeight="0.5069444" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20061256" sideWeight="0.7416918" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -679,22 +737,191 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Big changes, much things added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Big changes, much things added" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="28" selection-start="6824" selection-end="6824" vertical-scroll-proportion="0.0" vertical-offset="3230" max-vertical-offset="4097">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2632#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="1" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="79" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="52" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/gallery_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="24" selection-start="7876" selection-end="7876" vertical-scroll-proportion="0.0" vertical-offset="3162" max-vertical-offset="3162">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2632#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="1" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="79" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="52" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/gallery_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="24" selection-start="7876" selection-end="7876" vertical-scroll-proportion="0.0" vertical-offset="3162" max-vertical-offset="3162">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2632#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="1" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="79" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="13" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2244">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="12" selection-start="8384" selection-end="8384" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2632#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="25" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
-          <folding>
-            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#DBHelper#0;class#MainActivity#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -709,9 +936,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="30" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="4726">
           <folding>
-            <element signature="method#onActivityCreated#0;class#MainFragment#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MainFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#MainFragment#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2632#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
             <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
           </folding>
         </state>
@@ -720,10 +947,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="21" selection-start="3478" selection-end="3478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-          <folding>
-            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#DBHelper#0;class#MainActivity#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -734,35 +958,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="5712" selection-end="5712" vertical-scroll-proportion="4.5709023" vertical-offset="0" max-vertical-offset="2584">
-          <folding>
-            <element signature="e#5649#5670#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/custom_spinner.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="968" selection-end="968" vertical-scroll-proportion="0.997555" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="269" selection-end="269" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="468">
-          <folding>
-            <element signature="e#233#258#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="8" column="7" selection-start="269" selection-end="269" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="468" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
@@ -773,49 +971,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="52" selection-start="242" selection-end="242" vertical-scroll-proportion="0.109913796" vertical-offset="0" max-vertical-offset="464">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/gallery_layout.xml">
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.036637932" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/extras/android/support/v4/android-support-v4.jar!/android/support/v4/app/Fragment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="156" column="16" selection-start="6279" selection-end="6279" vertical-scroll-proportion="0.33200794" vertical-offset="2468" max-vertical-offset="4607" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="19" selection-start="844" selection-end="844" vertical-scroll-proportion="1.1908213" vertical-offset="0" max-vertical-offset="1445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="280" selection-end="280" vertical-scroll-proportion="0.2874396" vertical-offset="0" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="1" selection-start="2101" selection-end="2101" vertical-scroll-proportion="2.0120773" vertical-offset="0" max-vertical-offset="935">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -825,33 +992,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/main_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1088">
-          <folding>
-            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#DBHelper#0;class#MainActivity#0" expanded="false" />
-          </folding>
+        <state line="114" column="55" selection-start="4698" selection-end="4698" vertical-scroll-proportion="-9.18" vertical-offset="1479" max-vertical-offset="2584">
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/gallery_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="55" selection-start="508" selection-end="508" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/java/lang/StringBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/java/lang/AbstractStringBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="15" selection-start="517" selection-end="517" vertical-scroll-proportion="0.33333334" vertical-offset="181" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/util/Log.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="22" selection-start="2093" selection-end="2093" vertical-scroll-proportion="0.0" vertical-offset="566" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1072" column="22" selection-start="48634" selection-end="48634" vertical-scroll-proportion="0.0" vertical-offset="18094" max-vertical-offset="20196" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/view/accessibility/AccessibilityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/widget/AdapterView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1411" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/MessageQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="37" selection-start="762" selection-end="762" vertical-scroll-proportion="0.3323263" vertical-offset="247" max-vertical-offset="1054" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/view/Choreographer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="766" selection-end="766" vertical-scroll-proportion="0.3721591" vertical-offset="277" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/HeroButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="714">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
+        <state line="38" column="47" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/custom_spinner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="50" selection-start="586" selection-end="586" vertical-scroll-proportion="0.598916" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="75" selection-start="5255" selection-end="5255" vertical-scroll-proportion="0.0" vertical-offset="1975" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="13" selection-start="4235" selection-end="4235" vertical-scroll-proportion="0.0" vertical-offset="1458" max-vertical-offset="3825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/GalleryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="13" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.0" vertical-offset="1019" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="81" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/CustomArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="33" selection-start="1774" selection-end="1774" vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="1020">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/DotaEasyPick/MainFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="46" selection-start="8737" selection-end="8737" vertical-scroll-proportion="0.5523466" vertical-offset="1088" max-vertical-offset="1972">
+        <state line="101" column="49" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.5826613" vertical-offset="1428" max-vertical-offset="5151">
           <folding>
-            <element signature="method#onActivityCreated#0;class#MainFragment#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MainFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#MainFragment#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2632#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
             <element signature="method#setButtons#0;class#MainFragment#0" expanded="false" />
           </folding>
         </state>

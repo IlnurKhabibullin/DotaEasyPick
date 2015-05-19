@@ -33,4 +33,9 @@ public class HeroButton {
             }
         });
     }
+
+    public void setHero (int hId, int imageResource) {
+        heroId = hId;
+        button.setImageResource(imageResource);
+    }
 }
